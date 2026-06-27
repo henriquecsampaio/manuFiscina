@@ -267,6 +267,45 @@
   font-weight: 700;
 }
 
+.artist-list {
+display: grid;
+gap: 14px;
+margin-top: 14px;
+}
+
+.artist-card {
+background: rgba(255, 255, 255, 0.72);
+border: 1px solid rgba(7, 59, 76, 0.12);
+border-radius: 16px;
+padding: 14px;
+}
+
+.artist-card h3 {
+color: var(--deep-blue);
+font-size: 1rem;
+font-weight: 900;
+margin-bottom: 10px;
+}
+
+.artist-links {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 8px;
+}
+
+.artist-links .social-button {
+margin-top: 0;
+padding: 10px 12px;
+font-size: 0.9rem;
+}
+
+@media (max-width: 380px) {
+.artist-links {
+grid-template-columns: 1fr;
+}
+}
+
+
   </style>
 
 </head>
@@ -292,7 +331,7 @@
 
   <div class="important-note">
     Please include one of the following artist names in the e-transfer message:
-    <strong>Manu Fiscina, Sweet Side, or Hush Valley</strong>
+    <strong>Manu Fiscina, Sweetside, or Hush Valley</strong>
   </div>
 
   <p class="note">
@@ -302,25 +341,84 @@
 
 <section class="section">
   <h2>Before the show</h2>
+  <p>Listen and follow the artists:</p>
 
-  <a
-    class="social-button spotify-button"
-    href="https://open.spotify.com/artist/7ccJaDXexQ7v9aSb2Pi9O1?si=Eh-x2j3AQUqCu1ZEszdhIQ"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Listen on Spotify
-  </a>
+  <div class="artist-list">
+    <div class="artist-card">
+      <h3>Manu Fiscina</h3>
 
-  <a
-    class="social-button instagram-button"
-    href="https://www.instagram.com/manufiscina/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Follow on Instagram
-  </a>
+  <div class="artist-links">
+    <a
+      class="social-button spotify-button"
+      href="https://open.spotify.com/artist/7ccJaDXexQ7v9aSb2Pi9O1?si=Eh-x2j3AQUqCu1ZEszdhIQ"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Spotify
+    </a>
+
+    <a
+      class="social-button instagram-button"
+      href="https://www.instagram.com/manufiscina/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+  </div>
+</div>
+
+<div class="artist-card">
+  <h3>Sweetside</h3>
+
+  <div class="artist-links">
+    <a
+      class="social-button spotify-button"
+      href="https://open.spotify.com/artist/0ytzSbdrpbWDLugtUdAk4G?si=263XoYlJTQy6WlDplSzr5g"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Spotify
+    </a>
+
+    <a
+      class="social-button instagram-button"
+      href="https://www.instagram.com/sweetsideband?igsh=aG9rN2gyc2FqeGN5"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+  </div>
+</div>
+
+<div class="artist-card">
+  <h3>Hush Valley</h3>
+
+  <div class="artist-links">
+    <a
+      class="social-button spotify-button"
+      href="https://open.spotify.com/artist/4y9Uq4y74kATN87aq659je?si=WvtAasqcQZmLEiyeskmzFA"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Spotify
+    </a>
+
+    <a
+      class="social-button instagram-button"
+      href="https://www.instagram.com/hushvalleymusic?igsh=dXo5aHhzNGZmbWc0"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Instagram
+    </a>
+  </div>
+</div>
+
+  </div>
 </section>
+
 
 <p class="footer">
   Thank you for supporting live music
